@@ -1,0 +1,75 @@
+@import './variable';
+@import'./short-cut';
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+
+    h5 {
+        font-size: 20px;
+
+    }
+
+    nav ul {
+        display: flex;
+        list-style: none;
+        gap: 40px;
+
+        li a {
+            text-decoration: none;
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 133%;
+            color: #3f3b3d;
+            margin-top: 20px;
+        }
+
+        li a:hover {
+            color: #ff6a00;
+            transition: all 0.3s ease-in-out;
+
+        }
+    }
+
+
+}
+
+button {
+    @extend %button;
+}
+
+
+
+
+.header-icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .notification {
+        width: 18px;
+        height: 18px;
+        background-color: #3f3b3d;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 164%;
+        text-align: center;
+        color: #fff;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+
+    }
+}
