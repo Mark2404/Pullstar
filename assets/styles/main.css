@@ -230,4 +230,63 @@ swiper-slide img {
   font-size: 16px;
   line-height: 133%;
   color: #fff;
+}
+
+._info-title {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+._info-title p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  letter-spacing: 0.08em;
+  text-align: center;
+  color: #f14814;
+}
+._info-title h5 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 138%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #3f3b3d;
+  width: 58%;
+  text-align: center;
+  margin-top: 5px;
+}
+
+._info-icons-sec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+._info-icons-sec div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+._info-icons-sec div h5 {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 119%;
+  text-align: center;
+  color: #3f3b3d;
+}
+._info-icons-sec div p {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 133%;
+  text-align: center;
+  color: #3f3b3d;
 }/*# sourceMappingURL=main.css.map */
