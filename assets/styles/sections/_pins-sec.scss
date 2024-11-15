@@ -1,0 +1,58 @@
+@import "../variable";
+
+.first-pins-sec {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 8px;
+    margin-top: 50px;
+    max-width: 100%;
+    width: 100%;
+
+    gap: 8px;
+    margin-top: 50px;
+
+    @media (max-width: 665px) {
+        .first-pins-sec {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+    }
+}
+
+._pin {
+    position: relative;
+
+
+}
+
+.__pin-text {
+    padding: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    p {
+
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 133%;
+        text-transform: uppercase;
+        color: #3f3b3d;
+    }
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+}

@@ -141,11 +141,15 @@ swiper-slide img {
 }
 
 ._info-icons-sec {
-    display: flex;
+    display: grid;
     align-items: center;
     justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
+
     gap: 50px;
     margin-top: 50px;
+
 
     div {
         display: flex;
