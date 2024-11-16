@@ -7,7 +7,7 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: repeat(auto-fit, minmax(200px, 1fr));
     gap: 8px;
-    margin-top: 50px;
+
     max-width: 100%;
     width: 100%;
 
@@ -54,5 +54,58 @@
         display: flex;
         align-items: center;
         gap: 5px;
+    }
+}
+
+.second-pins-sec {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 50px;
+    margin-top: 50px;
+
+    div {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h5 {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 39px;
+            line-height: 113%;
+            letter-spacing: 0.01em;
+            color: #fff;
+        }
+
+        p {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 133%;
+            color: #fff;
+        }
+    }
+
+
+}
+
+.second-pins {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+._second-pins-info {
+    position: absolute;
+    bottom: 100px;
+
+    img {
+        position: absolute;
+
     }
 }
