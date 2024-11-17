@@ -5,3 +5,8 @@
 @import "../styles/sections/pins-sec";
 @import './sections/about-sec';
 @import './sections/journal-sec';
+@import "./footer";
+
+body {
+    scroll-behavior: smooth;
+}

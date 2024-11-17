@@ -1,0 +1,138 @@
+@import "./variable";
+@import "./short-cut";
+
+footer {
+    background-color: #3f3b3d;
+    padding: 10x;
+    width: 100%;
+
+    ._footer-title {
+        h1 {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 29px;
+            line-height: 110%;
+            text-transform: uppercase;
+            color: #fff;
+            padding: 96px 30px;
+        }
+
+    }
+
+    ._footer-imgs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+
+    }
+}
+
+.footer-links-sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 60px;
+
+    b {
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 133%;
+        color: #fff;
+    }
+
+    ._footer-line {
+        width: 512px;
+        height: 2px;
+        background-color: #fff;
+        margin-top: 60px;
+    }
+}
+
+._footer-links-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+    padding: 0 20px;
+
+    ._footer-link {
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        gap: 5px;
+        text-align: left;
+
+        a:nth-child(1) {
+            margin-bottom: 12px;
+
+        }
+
+
+        a {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 133%;
+            color: #fff;
+            text-decoration: none;
+            text-align: left;
+
+            &:hover {
+                color: #ff6a00;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-top: 2px solid rgba(0, 0, 0, 0.12);
+    ;
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        p:nth-child(1) {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 133%;
+            color: #fff;
+        }
+
+        p:nth-child(2) {
+            font-family: var(--font-family);
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 133%;
+            color: #f14814;
+        }
+    }
+
+    button {
+        @extend %button;
+        background-color: #f14814;
+        font-family: var(--font-family);
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 133%;
+        color: #fff;
+
+
+
+
+
+    }
+
+}
