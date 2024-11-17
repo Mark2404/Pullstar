@@ -10,3 +10,49 @@
 body {
     scroll-behavior: smooth;
 }
+
+.back-to-top {
+    position: fixed;
+    /* Кнопка фиксирована на экране */
+    bottom: 20px;
+    /* Расстояние от нижнего края */
+    right: 20px;
+    /* Расстояние от правого края */
+    width: 50px;
+    /* Размер кнопки */
+    height: 50px;
+    background: #dceae9;
+    /* Основной цвет */
+    color: #3f3b3d;
+    /* Цвет стрелки */
+    border: none;
+    /* Без рамки */
+    border-radius: 50%;
+    /* Круглая форма */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    /* Размер стрелки */
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    /* Лёгкая тень */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    z-index: 1000;
+    /* Поверх другого контента */
+}
+
+.back-to-top:hover {
+    background: #3f3b3d;
+    /* Меняем фон */
+    color: #dceae9;
+    /* Меняем цвет стрелки */
+    transform: scale(1.1);
+    /* Увеличение кнопки */
+}
+
+/* Скрытие кнопки по умолчанию */
+.back-to-top.hidden {
+    display: none;
+    /* Прячем кнопку */
+}

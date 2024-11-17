@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap");
@@ -782,4 +783,50 @@ footer ._footer-imgs {
 
 body {
   scroll-behavior: smooth;
+}
+
+.back-to-top {
+  position: fixed;
+  /* Кнопка фиксирована на экране */
+  bottom: 20px;
+  /* Расстояние от нижнего края */
+  right: 20px;
+  /* Расстояние от правого края */
+  width: 50px;
+  /* Размер кнопки */
+  height: 50px;
+  background: #dceae9;
+  /* Основной цвет */
+  color: #3f3b3d;
+  /* Цвет стрелки */
+  border: none;
+  /* Без рамки */
+  border-radius: 50%;
+  /* Круглая форма */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  /* Размер стрелки */
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  /* Лёгкая тень */
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  z-index: 1000;
+  /* Поверх другого контента */
+}
+
+.back-to-top:hover {
+  background: #3f3b3d;
+  /* Меняем фон */
+  color: #dceae9;
+  /* Меняем цвет стрелки */
+  transform: scale(1.1);
+  /* Увеличение кнопки */
+}
+
+/* Скрытие кнопки по умолчанию */
+.back-to-top.hidden {
+  display: none;
+  /* Прячем кнопку */
 }/*# sourceMappingURL=main.css.map */
