@@ -4,15 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="./assets/styles/main.css">
     <title>Pulstar</title>
 </head>
 
-<body style="scroll-behavior: smooth;">
-    <header class="container">
+<body style="scroll-behavior: smooth; height: 100vh;overflow-x:hidden ;">
+    <header class="container mb-container">
         <h5>pulstar</h5>
         <div>
-            <nav>
+            <nav class="mb-none">
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#About">About</a></li>
@@ -29,13 +30,15 @@
                     </div>
                 </ul>
             </nav>
-        </div>
-    </header>
-    <section class="Carusel-section">
-        <div class="container Carusel-section-layout">
-            <div class="background-box">
+            <img class="my-menu" src="./assets/icons/menu.svg" alt="Menu" aria-label="Open Menu"
+                style="width: 30px; height: 30px;">
 
-                <div class="__bc-box-text">
+    </header>
+    <section class="Carusel-section mb-container">
+        <div class="container Carusel-section-layout">
+            <div class="background-box mb-background-box">
+
+                <div class="__bc-box-text mb-_bc-box-text">
                     <h1>
                         Shop hundreds of <br>
                         enamel pins from artists.
@@ -47,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            <swiper-container class="mySwiper" pagination="true">
+            <swiper-container class="mySwiper mb-none" pagination="true">
                 <swiper-slide><img src="./assets/imgs/sec1-img.svg" alt=""></swiper-slide>
                 <swiper-slide><img src="./assets/imgs/sec1-img.svg" alt=""></swiper-slide>
                 <swiper-slide><img src="./assets/imgs/sec1-img.svg" alt=""></swiper-slide>
@@ -57,14 +60,14 @@
 
 
         </div>
-        <div class="carusel-info container">
-            <div class="_info-title ">
+        <div class="carusel-info container mb-container">
+            <div class="_info-title mb-info-title ">
 
                 <p>Ready, Set, Go</p>
                 <h5>Shop hundreds of enamel pins from artists. The best cool pin badges to decorate your backpack, denim
                     jean jacket, lapel, and festival hat for sale in our online store.</h5>
             </div>
-            <div class="_info-icons-sec container">
+            <div class="_info-icons-sec container mb-container _mb-info-icons-sec">
                 <div>
                     <img src="./assets/icons/carusel-sec-icon1.svg" alt="">
                     <h5>Free Artwork</h5>
@@ -87,8 +90,8 @@
             </div>
         </div>
     </section>
-    <section id="Pins" class="pins-sec container">
-        <div class="first-pins-sec">
+    <section id="Pins" class="pins-sec container mb-container">
+        <div class="first-pins-sec mb-first-pins-sec">
             <div class="_pin">
                 <img src="./assets/imgs/pins1.svg" alt="">
                 <div class="__pin-text">
@@ -122,8 +125,8 @@
                 </div>
             </div>
         </div>
-        <div class="second-pins-sec container">
-            <div class="_second-pins">
+        <div class="second-pins-sec container mb-second-pins-sec mb-container">
+            <div class="_second-pins mb-second-pins">
 
                 <img src="./assets/imgs/pins-big-img1.svg" alt="">
                 <div class="_second-pins-info">
@@ -132,7 +135,7 @@
                     <p>Explore everything</p>
                 </div>
             </div>
-            <div class="_second-pins">
+            <div class="_second-pins mb-second-pins">
 
                 <img src="./assets/imgs/pins-big-img2.svg" alt="">
                 <div class="_second-pins-info">
@@ -143,9 +146,9 @@
             </div>
         </div>
     </section>
-    <section id="About" class="about-sec container">
+    <section id="About" class="about-sec container mb-container mb-about-sec">
         <h1>Get the rest of the story</h1>
-        <div class="_about-sec-layout">
+        <div class="_about-sec-layout mb-about-sec-layout">
             <img src="./assets/imgs/about-img.svg" alt="">
             <div>
                 <h5>“Best templates and support out there! They are always happy to help with any issues you may be
@@ -154,7 +157,7 @@
             </div>
 
         </div>
-        <div class="_about-sec-partners">
+        <div class="_about-sec-partners mb-about-partners">
             <div class="_partner">
                 <img src="./assets/icons/partner-img1.svg" alt="">
                 <p>“Great communication and help from him. Thank you.”</p>
@@ -184,8 +187,8 @@
         </div>
 
     </section>
-    <section id="Journal" class="journal-sec container">
-        <div class="_journal-big-img-sec">
+    <section id="Journal" class="journal-sec container mb-container mb-journal-sec">
+        <div class="_journal-big-img-sec mb-journal-big-img-sec">
             <img src="./assets/imgs/journal-secimg.svg" alt="">
             <div class="_journal-sec-img-info">
                 <p>February 26, 2022</p>
@@ -196,13 +199,13 @@
             </div>
 
         </div>
-        <div class="_journal-imgs-sec">
+        <div class="_journal-imgs-sec mb-journal-imgs-sec">
             <div class="_journal-imgs-sec-title">
                 <h1>Journal</h1>
                 <p>Read the latest</p>
             </div>
             <div class="_journal-imgs">
-                <div class="_journal-img">
+                <div class="_journal-img mb-journal-img">
                     <img src="./assets/imgs/journalimg1.svg" alt="">
                     <div>
                         <p>February 26, 2022</p>
@@ -211,7 +214,7 @@
                     </div>
 
                 </div>
-                <div class="_journal-img">
+                <div class="_journal-img mb-journal-img">
                     <img src="./assets/imgs/journal-img2.svg" alt="">
                     <div>
                         <p>February 26, 2022</p>
@@ -220,7 +223,7 @@
                     </div>
 
                 </div>
-                <div class="_journal-img">
+                <div class="_journal-img mb-journal-img">
                     <img src="./assets/imgs/journal-img3.svg" alt="">
                     <div>
                         <p>February 26, 2022</p>
@@ -237,7 +240,7 @@
 
     </section>
     <footer id="Footer">
-        <div class="footer container">
+        <div class="footer container mb-container mb-footer">
             <div class="_footer-title">
                 <h1>Celebrating the <br> perfectly imperfect</h1>
 
@@ -250,12 +253,12 @@
 
             </div>
         </div>
-        <div class="footer-links-sec container">
-            <div class="_footer-title">
+        <div class="footer-links-sec container mb-container">
+            <div id="footer-title" class="_footer-title mb-footer-title">
                 <b>Subscribe for stories and new product <br> announcements.</b>
-                <div class="_footer-line"></div>
+                <div class="_footer-line mb-footer-line"></div>
             </div>
-            <div class="_footer-links-sec">
+            <div class="_footer-links-sec mb-none">
                 <div class="_footer-link">
                     <a href="#">shop</a>
                     <a href="#">All products</a>
@@ -282,18 +285,29 @@
 
             </div>
         </div>
-        <div class="footer-bottom container">
+        <div class="footer-bottom container mb-container mb-footer-bottom">
             <div>
                 <p>© Pulstar powered by</p>
                 <p>Webflow</p>
             </div>
-            <button>buy template</button>
+            <button class="mb-none">buy template</button>
 
         </div>
     </footer>
     <button class="back-to-top" aria-label="Back to Top">
         &#8679;
     </button>
+    <div class="fullscreen-menu">
+        <button class="close-btn" aria-label="Close Menu">&#10005;</button>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Journal">Journal</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </body>
 
 <!-- java kodla -->
@@ -318,5 +332,24 @@
         }
     });
 </script>
+<script>
+    // Находим элементы
+    const menuIcon = document.querySelector('.my-menu'); // Иконка меню
+    const fullscreenMenu = document.querySelector('.fullscreen-menu'); // Полноэкранное меню
+    const closeButton = document.querySelector('.close-btn'); // Кнопка закрытия
+
+    // Открытие меню
+    menuIcon.addEventListener('click', () => {
+        fullscreenMenu.classList.add('show'); // Добавляем класс для отображения
+    });
+
+    // Закрытие меню
+    closeButton.addEventListener('click', () => {
+        fullscreenMenu.classList.remove('show'); // Убираем класс, скрываем меню
+    });
+
+
+</script>
+
 
 </html>

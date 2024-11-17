@@ -11,48 +11,335 @@ body {
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #93847add;
+
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ff0b0b;
+    border-radius: 6px;
+    border: 3px solid rgb(196, 11, 11);
+}
+
 .back-to-top {
     position: fixed;
-    /* Кнопка фиксирована на экране */
     bottom: 20px;
-    /* Расстояние от нижнего края */
     right: 20px;
-    /* Расстояние от правого края */
     width: 50px;
-    /* Размер кнопки */
     height: 50px;
     background: #dceae9;
-    /* Основной цвет */
     color: #3f3b3d;
-    /* Цвет стрелки */
     border: none;
-    /* Без рамки */
     border-radius: 50%;
-    /* Круглая форма */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24px;
-    /* Размер стрелки */
     cursor: pointer;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    /* Лёгкая тень */
     transition: background-color 0.3s ease, transform 0.3s ease;
     z-index: 1000;
-    /* Поверх другого контента */
+
 }
 
 .back-to-top:hover {
     background: #3f3b3d;
-    /* Меняем фон */
     color: #dceae9;
-    /* Меняем цвет стрелки */
     transform: scale(1.1);
-    /* Увеличение кнопки */
+
 }
 
-/* Скрытие кнопки по умолчанию */
-.back-to-top.hidden {
+.my-menu {
     display: none;
-    /* Прячем кнопку */
+    width: 30px;
+    height: 30px;
+}
+
+/* Иконка меню */
+.my-menu {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.my-menu:hover {
+    transform: scale(1.1);
+}
+
+/* Полноэкранное меню */
+.fullscreen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #3f3b3d;
+    /* Тёмный фон */
+    color: #dceae9;
+    /* Светлый текст */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transform: translateX(-100%);
+    /* Сдвигаем за левый край экрана */
+    transition: transform 0.5s ease;
+    /* Плавное появление */
+}
+
+/* Показ меню */
+.fullscreen-menu.show {
+    transform: translateX(0);
+    /* Меню на весь экран */
+}
+
+/* Навигация */
+.fullscreen-menu nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.fullscreen-menu nav ul li {
+    margin: 20px 0;
+}
+
+.fullscreen-menu nav ul li a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #dceae9;
+    transition: color 0.3s ease;
+}
+
+.fullscreen-menu nav ul li a:hover {
+    color: #ffffff;
+    /* Более светлый оттенок */
+}
+
+/* Кнопка закрытия */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    background: none;
+    border: none;
+    color: #dceae9;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.close-btn:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+
+@media (max-width: 665px) {
+    .mb-container {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+    .mb-none {
+        display: none;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .my-menu {
+        display: block;
+    }
+
+    .mb-background-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mb-_bc-box-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h1 {
+            text-align: center;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
+
+    .mb-info-title {
+        h5 {
+            text-align: center;
+            width: 100%;
+
+        }
+    }
+
+    ._mb-info-icons-sec {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .mb-first-pins-sec {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mb-second-pins-sec {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .mb-about-sec-layout {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .mb-about-partners {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        gap: 30px;
+    }
+
+    .mb-journal-big-img-sec {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mb-journal-sec {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%
+    }
+
+    .mb-journal-imgs-sec {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+
+        ._journal-imgs-sec-title {
+            margin-bottom: 30px;
+
+            p {
+                text-align: center;
+            }
+        }
+    }
+
+    .mb-journal-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+
+        div {
+            p {
+                text-align: center;
+            }
+        }
+    }
+
+    .mb-footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+
+        ._footer-title {
+            text-align: center;
+            width: 100%;
+        }
+
+        ._footer-imgs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+        }
+
+
+    }
+
+
+
+    #footer-title {
+        text-align: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .mb-footer-line {
+        width: 100%;
+
+    }
+
+    .mb-footer-links-sec {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mb-footer-bottom {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+
 }

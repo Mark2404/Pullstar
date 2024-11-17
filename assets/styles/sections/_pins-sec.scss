@@ -58,14 +58,14 @@
 }
 
 .second-pins-sec {
-    display: grid;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));
     gap: 50px;
     margin-top: 50px;
+
+
 
     div {
         position: relative;
